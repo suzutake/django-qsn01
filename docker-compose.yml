@@ -1,9 +1,5 @@
 version: '3'
 
-volumes:
-  qsn.db.volume:
-    name: qsn.db.volume
-
 services:
     web:
         build: ./code
@@ -22,3 +18,8 @@ services:
           - POSTGRES_DB=postgres
           - POSTGRES_USER=postgres
           - POSTGRES_PASSWORD=postgres
+        volumes:
+          - db_data:/var/lib/postgresql/data
+
+volumes:
+    db_data:
