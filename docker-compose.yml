@@ -1,5 +1,9 @@
 version: '3'
 
+volumes:
+  qsn.db.volume:
+    name: qsn.db.volume
+
 services:
     web:
         build: ./code
