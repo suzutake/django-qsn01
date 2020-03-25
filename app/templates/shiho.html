@@ -15,6 +15,7 @@
 	<link rel="stylesheet" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" media="screen" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,700,300italic">
 	<!-- Custom styles for our template -->
 	<link rel="stylesheet" href="{% static "app/css/bootstrap-theme.css" %}" media="screen" >
 	<link rel="stylesheet" href="{% static "app/css/main.css" %}">
@@ -24,6 +25,49 @@
 	<script src="{% static "app/js/html5shiv.js" %}"></script>
 	<script src="{% static "app/js/respond.min.js" %}"></script>
 	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<style type="text/css">
+
+
+.panel {
+border: 1px solid #acac;
+border-left: none;
+border-right:none;
+background-color: white;
+padding: 20px 20px;
+display: none;
+}
+.box {
+background-color: #eee;
+display: block;
+display: inline-block;
+width: 50%;
+border: 1px solid #acac;
+}
+.btn{
+display: block;
+flex-grow: 1;
+width: 100%;
+padding: 20px;
+background-color: inherit;
+outline: none;
+border: none;
+cursor: pointer;
+text-align: left;
+}
+.btn:hover {
+background-color: #ddd;
+}
+.fas {
+float: right;
+}
+
+
+	</style>
+
 </head>
 
 <body class="home">
@@ -44,6 +88,70 @@
     </ul>
   </div>
 </nav>
+
+
+
+<div class="box">
+    <!---->
+    <button class="btn">Home<i class="fas fa-home"></i></button>
+    <div class="panel">
+      <h2>Home</h2>
+			<div class="row">
+			    <div class="col-3">
+			        <p>staff_1</p>
+			    </div>
+			    <div class="col-9">
+			        <p>staff_1</p>
+			    </div>
+			</div>
+			<div class="row">
+			    <div class="col-3">
+			        <p>price_1</p>
+			    </div>
+			    <div class="col-9">
+			        <p>price_1</p>
+			    </div>
+			</div>
+    </div>
+    <!---->
+    <button class="btn">About<i class="fas fa-users"></i></button>
+    <div class="panel">
+      <h2>About</h2>
+    </div>
+    <!---->
+    <button class="btn">Menu<i class="fas fa-chevron-circle-down"></i></button>
+    <div class="panel">
+      <h2>Menu</h2>
+    </div>
+    <!---->
+  </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+
+
+	<script>
+
+
+
+var btn = document.getElementsByClassName("btn");
+var i;
+for(i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click",function(){
+    var panel = this.nextElementSibling;
+    if(panel.style.display == "block") {
+      $(panel).slideUp(300);
+    }else {
+      $(panel).slideDown(300);
+    }
+  })
+}
+
+
+
+	</script>
 
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
