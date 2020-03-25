@@ -1,3 +1,6 @@
 Django==2.2.2
 psycopg2==2.8.3
 Pillow
+django-crispy-forms==1.7.2
+django-filter==2.0.0
+kombu-sqlalchemy==1.1.0
