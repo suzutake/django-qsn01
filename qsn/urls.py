@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.views import showIndex
+from app.views import showShiho
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', showIndex, name='index'),
+    path('shiho/', showShiho, name='shiho'),
 ]
