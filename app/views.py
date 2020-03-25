@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 # add service functions(Views)
-from django.contrib.auth.mixins import LoginRequiredMixin
+#from django.contrib.auth.mixins import LoginRequiredMixin
 
 from django.views.generic import DetailView
 from django.views.generic import CreateView, UpdateView, DeleteView
@@ -26,7 +26,8 @@ def showShiho(request):
 
 
 # 検索一覧画面
-class ItemFilterView(LoginRequiredMixin, FilterView):
+#class ItemFilterView(LoginRequiredMixin, FilterView):
+class ItemFilterView(FilterView):
     model = Item
 
     # デフォルトの並び順を新しい順とする
@@ -53,26 +54,30 @@ class ItemFilterView(LoginRequiredMixin, FilterView):
 
 
 # 詳細画面
-class ItemDetailView(LoginRequiredMixin, DetailView):
+#class ItemDetailView(LoginRequiredMixin, DetailView):
+class ItemDetailView(DetailView):
     model = Item
 
 
 # 登録画面
-class ItemCreateView(LoginRequiredMixin, CreateView):
+#class ItemCreateView(LoginRequiredMixin, CreateView):
+class ItemCreateView(CreateView):
     model = Item
     form_class = ItemForm
-    success_url = reverse_lazy('index')
+    success_url = reverse_lazy('list')
 
 
 # 更新画面
-class ItemUpdateView(LoginRequiredMixin, UpdateView):
+#class ItemUpdateView(LoginRequiredMixin, UpdateView):
+class ItemUpdateView(UpdateView):
     Item.Price_total=30
     model = Item
     form_class = ItemForm
-    success_url = reverse_lazy('index')
+    success_url = reverse_lazy('list')
 
 
 # 削除画面
-class ItemDeleteView(LoginRequiredMixin, DeleteView):
+#class ItemDeleteView(LoginRequiredMixin, DeleteView):
+class ItemDeleteView(DeleteView):
     model = Item
-    success_url = reverse_lazy('index')
+    success_url = reverse_lazy('list')
