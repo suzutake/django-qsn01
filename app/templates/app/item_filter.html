@@ -86,6 +86,43 @@
 			</ul>
 		</div>
 	</div>
+
+	<div class="row">
+		<div class="col-12">
+			<ul class="list-group">
+				{% for item in item_list %}
+				<li class="list-group-item">
+					<div class="card">
+						<div class="image-box">
+					  </div>
+					  <div class="title-box">
+					    <p class="title">{{ item.name }}</p>
+					  </div>
+					  <div class="line"></div>
+					  <div class="desc-box">
+							<p class="desc">Total: {{ item.price_total }}</p>
+							<p class="desc">{{ item.created_at|date:"Y/m/d G:i:s" }}</p>
+					  </div>
+						<div class="row">
+							<div class="col-12">
+								<div class="float-right">
+									<a class="btn btn-outline-secondary " href="{% url 'detail' item.pk %}">Detail/Chi tiết</a>
+									<a class="btn btn-outline-secondary " href="{% url 'update' item.pk %}">Edit/Biên tập</a>
+									<a class="btn btn-outline-secondary " href="{% url 'delete' item.pk %}">Delete/Xóa</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				{% empty %}
+				<li class="list-group-item">
+					対象のデータがありません/Không có dữ liệu đích
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+
 	<div class="row" >
 		<div class="col-12">
 			<div class="float-right">
