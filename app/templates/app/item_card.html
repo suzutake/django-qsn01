@@ -1,125 +1,95 @@
-<div class="box">
-
-  <div class="row">
-      <div class="col-3">
-          <p>Customer_name</p>
-      </div>
-      <div class="col-9">
-          <p>{{ item.name }}</p>
-      </div>
+<div class="card">
+  <div class="image-box">
   </div>
-
-  <div class="row">
-      <div class="col-3">
-          <p>staff_1</p>
-      </div>
-      <div class="col-9">
-          <p>{{ item.staff_1 }}</p>
-      </div>
+  <div class="title-box">
+    <p class="title">{{ item.name }}</p>
   </div>
-  <div class="row">
-      <div class="col-3">
-          <p>price_1</p>
-      </div>
-      <div class="col-9">
-          <p>{{ item.price_1 }}</p>
-      </div>
+  <div class="line"></div>
+  <div class="desc-box">
+		<p class="desc">customer</p>
   </div>
-
-  <button class="btn">Staff-2<i class="fas fa-home"></i></button>
-    <div class="panel">
-      <div class="row">
-          <div class="col-3">
-              <p>staff_2</p>
-          </div>
-          <div class="col-9">
-              <p>{{ item.staff_2 }}</p>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-3">
-              <p>price_2</p>
-          </div>
-          <div class="col-9">
-              <p>{{ item.price_2 }}</p>
-          </div>
-      </div>
-    </div>
-    <br />
-    <button class="btn">Staff-3<i class="fas fa-home"></i></button>
-      <div class="panel">
-        <div class="row">
-            <div class="col-3">
-                <p>staff_3</p>
-            </div>
-            <div class="col-9">
-                <p>{{ item.staff_3 }}</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <p>price_3</p>
-            </div>
-            <div class="col-9">
-                <p>{{ item.price_3 }}</p>
-            </div>
-        </div>
-      </div>
-      <br />
-      <button class="btn">Staff-4<i class="fas fa-home"></i></button>
-        <div class="panel">
-          <div class="row">
-              <div class="col-3">
-                  <p>staff_4</p>
-              </div>
-              <div class="col-9">
-                  <p>{{ item.staff_4 }}</p>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-3">
-                  <p>price_4</p>
-              </div>
-              <div class="col-9">
-                  <p>{{ item.price_4 }}</p>
-              </div>
-          </div>
-        </div>
-        <br />
-      <button class="btn">Staff-5<i class="fas fa-home"></i></button>
-        <div class="panel">
-          <div class="row">
-              <div class="col-3">
-                  <p>staff_5</p>
-              </div>
-              <div class="col-9">
-                  <p>{{ item.staff_5 }}</p>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-3">
-                  <p>price_5</p>
-              </div>
-              <div class="col-9">
-                  <p>{{ item.price_5 }}</p>
-              </div>
-          </div>
-        </div>
-
-<div class="row">
-    <div class="col-3">
-        <p>備考</p>
-    </div>
-    <div class="col-9">
-        <p>{{ item.memo|linebreaksbr }}</p>
-    </div>
 </div>
-<div class="row">
-    <div class="col-3">
-        <p>登録日</p>
-    </div>
-    <div class="col-9">
-        <p>{{ item.created_at|date:"Y/m/d G:i:s" }}</p>
-    </div>
+
+<div class="card">
+  <div class="image-box">
+  </div>
+  <div class="title-box">
+    <p class="title">{{ item.staff_1 }}</p>
+  </div>
+  <div class="line"></div>
+  <div class="desc-box">
+		<p class="desc">{{ item.price_1 }}</p>
+  </div>
 </div>
+
+<div class="card">
+  <div class="image-box">
+  </div>
+  <div class="title-box">
+    <p class="title">{{ item.staff_2 }}</p>
+  </div>
+  <div class="line"></div>
+  <div class="desc-box">
+		<p class="desc">{{ item.price_2 }}</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-box">
+  </div>
+  <div class="title-box">
+    <p class="title">{{ item.staff_3 }}</p>
+  </div>
+  <div class="line"></div>
+  <div class="desc-box">
+		<p class="desc">{{ item.price_3 }}</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-box">
+  </div>
+  <div class="title-box">
+    <p class="title">{{ item.staff_4 }}</p>
+  </div>
+  <div class="line"></div>
+  <div class="desc-box">
+		<p class="desc">{{ item.price_4 }}</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-box">
+  </div>
+  <div class="title-box">
+    <p class="title">{{ item.staff_5 }}</p>
+  </div>
+  <div class="line"></div>
+  <div class="desc-box">
+		<p class="desc">{{ item.price_5 }}</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-box">
+  </div>
+  <div class="title-box">
+    <p class="title">Memo</p>
+  </div>
+  <div class="line"></div>
+  <div class="desc-box">
+		<p class="desc">{{ item.memo|linebreaksbr }}</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-box">
+  </div>
+  <div class="title-box">
+    <p class="title">Dan ky</p>
+  </div>
+  <div class="line"></div>
+  <div class="desc-box">
+		<p class="desc">{{ item.created_at|date:"Y/m/d G:i:s" }}</p>
+  </div>
 </div>

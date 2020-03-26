@@ -16,38 +16,58 @@
     <link href="{% static "app/css/app.css" %}" rel="stylesheet">
 
     <style type="text/css">
-      .panel {
-      border: 1px solid #acac;
-      border-left: none;
-      border-right:none;
-      background-color: white;
-      padding: 20px 20px;
-      display: none;
-      }
-      .box {
-      background-color: #eee;
-      display: block;
-      display: inline-block;
-      width: 50%;
-      border: 1px solid #acac;
-      }
-      .btn.new{
-      display: block;
-      flex-grow: 1;
-      width: 100%;
-      padding: 20px;
-      background-color: inherit;
-      outline: none;
-      border: none;
-      cursor: pointer;
-      text-align: left;
-      }
-      .btn.new:hover {
-      background-color: #ddd;
-      }
-      .fas {
-      float: right;
-      }
+      p {
+  			margin:0;
+  		}
+
+  		.card{
+  			display:inline-block;
+  			background-color:#fff;
+  			margin:5px;
+  			padding-bottom:10px;
+  			border-radius:5px;
+  				-moz-box-shadow:0 2px 2px 0 rgba(0,0,0,0.2);
+  				-webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,0.2);
+  			box-shadow:0 2px 2px 0 rgba(0,0,0,0.2);
+  		}
+
+  		.image-box,
+  		.title-box,
+  		.desc-box,
+  		.card{
+  			width:250px;
+  		}
+
+  		.image-box{
+  			border-radius:5px 5px 0 0;
+  			background-color:#f8f8f8;
+  			margin-bottom:-6px;
+  			height:120px;
+  			background:url("https://placehold.jp/250x120.png") center center /cover no-repeat;
+  		}
+
+  		.title-box{
+  			margin:0 auto;
+  			padding-left:5px;
+  			font-size:18px;
+  			padding:20px 10px 10px;
+  		}
+
+  		.line{
+  			height:1px;
+  			background:#e8e8e8;
+  			margin-bottom:10px;
+  		}
+
+  		.desc-box{
+  			padding:0 10px 10px;
+  			color:#666666;
+  			font-size:12px
+  		}
+
+  		.title,.desc{
+  			width:230px
+  		}
   	</style>
 
 
@@ -78,23 +98,6 @@
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script>
-
-
-
-  var btn = document.getElementsByClassName("btn");
-  var i;
-  for(i = 0; i < btn.length; i++) {
-    btn[i].addEventListener("click",function(){
-      var panel = this.nextElementSibling;
-      if(panel.style.display == "block") {
-        $(panel).slideUp(300);
-      }else {
-        $(panel).slideDown(300);
-      }
-    })
-  }
-
-
 
   	</script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
