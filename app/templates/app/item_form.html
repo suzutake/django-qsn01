@@ -21,39 +21,78 @@
         <div class="col-12">
             <form method="post" id="myform">
                 <div class="form-row">
-                    <div class="form-group col-md-6 mb-0">
-                        {{ form.name | as_crispy_field }}
+                    <div class="card">
+                      <div class="image-box">
+                      </div>
+                      <div class="title-box">
+                        <p class="title">Customer name:{{ form.name | as_crispy_field }}</p>
+                      </div>
+                      <div class="line"></div>
+                      <div class="desc-box">
+                        <p class="desc"></p>
+                      </div>
                     </div>
-                    <div class="form-group col-md-6 mb-0">
-                        {{ form.staff_1 | as_crispy_field }}
+
+                    <div class="card">
+                      <div class="image-box">
+                      </div>
+                      <div class="title-box">
+                        <p class="title">Staff name:{{ form.staff_1 | as_crispy_field }}</p>
+                      </div>
+                      <div class="line"></div>
+                      <div class="desc-box">
+                        <p class="desc">{{ form.price_1 | as_crispy_field }}</p>
+                      </div>
                     </div>
-                    <div class="form-group col-md-6 mb-0">
-                        {{ form.price_1 | as_crispy_field }}
+
+                    <div class="card">
+                      <div class="image-box">
+                      </div>
+                      <div class="title-box">
+                        <p class="title">Staff name:{{ form.staff_2 | as_crispy_field }}</p>
+                      </div>
+                      <div class="line"></div>
+                      <div class="desc-box">
+                        <p class="desc">{{ form.price_2 | as_crispy_field }}</p>
+                      </div>
                     </div>
-                    <div class="form-group col-md-6 mb-0">
-                        {{ form.staff_2 | as_crispy_field }}
+
+                    <div class="card">
+                      <div class="image-box">
+                      </div>
+                      <div class="title-box">
+                        <p class="title">Staff name:{{ form.staff_3 | as_crispy_field }}</p>
+                      </div>
+                      <div class="line"></div>
+                      <div class="desc-box">
+                        <p class="desc">{{ form.price_3 | as_crispy_field }}</p>
+                      </div>
                     </div>
-                    <div class="form-group col-md-6 mb-0">
-                        {{ form.price_2 | as_crispy_field }}
+
+                    <div class="card">
+                      <div class="image-box">
+                      </div>
+                      <div class="title-box">
+                        <p class="title">Staff name:{{ form.staff_4 | as_crispy_field }}</p>
+                      </div>
+                      <div class="line"></div>
+                      <div class="desc-box">
+                        <p class="desc">{{ form.price_4 | as_crispy_field }}</p>
+                      </div>
                     </div>
-                    <div class="form-group col-md-6 mb-0">
-                        {{ form.staff_3 | as_crispy_field }}
+
+                    <div class="card">
+                      <div class="image-box">
+                      </div>
+                      <div class="title-box">
+                        <p class="title">Staff name:{{ form.staff_5 | as_crispy_field }}</p>
+                      </div>
+                      <div class="line"></div>
+                      <div class="desc-box">
+                        <p class="desc">{{ form.price_5 | as_crispy_field }}</p>
+                      </div>
                     </div>
-                    <div class="form-group col-md-6 mb-0">
-                        {{ form.price_3 | as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-6 mb-0">
-                        {{ form.staff_4 | as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-6 mb-0">
-                        {{ form.price_4 | as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-6 mb-0">
-                        {{ form.staff_5 | as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-6 mb-0">
-                        {{ form.price_5 | as_crispy_field }}
-                    </div>
+
                     <div class="form-group col-md-6 mb-0">
                         {{ form.memo | as_crispy_field }}
                     </div>
