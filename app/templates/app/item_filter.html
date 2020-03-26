@@ -27,7 +27,7 @@
 		<div class="col-12">
 			<a class="btn btn-secondary filtered" style="visibility:hidden" href="/?page=1">deselect condition</a>
 			<div class="float-right">
-				<a class="btn btn-outline-secondary" href="{% url 'create' %}">New/Mới</a>
+				<a class="btn btn-success" href="{% url 'create' %}">Mới</a>
 				<a class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal" href="#">Search/Tìm kiếm</a>
 			</div>
 		</div>
@@ -58,9 +58,9 @@
 						<div class="row">
 							<div class="col-12">
 								<div class="float-right">
-									<a class="btn btn-outline-secondary " href="{% url 'detail' item.pk %}">Detail/Chi tiết</a>
-									<a class="btn btn-outline-secondary " href="{% url 'update' item.pk %}">Edit/Biên tập</a>
-									<a class="btn btn-outline-secondary " href="{% url 'delete' item.pk %}">Delete/Xóa</a>
+									<a class="btn btn-primary " href="{% url 'detail' item.pk %}">Chi tiết</a>
+									<a class="btn btn-success " href="{% url 'update' item.pk %}">Biên tập</a>
+									<a class="btn btn-danger " href="{% url 'delete' item.pk %}">Xóa</a>
 								</div>
 							</div>
 						</div>
@@ -75,13 +75,6 @@
 		</div>
 	</div>
 
-	<div class="row" >
-		<div class="col-12">
-			<div class="float-right">
-				<a class="btn btn-outline-secondary" href="{% url 'create' %}">New/Mới</a>
-				<a class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal" href="#">Search/Tìm kiếm</a>
-			</div>
-		</div>
-	</div>
+
 </div>
 {% endblock %}
