@@ -23,10 +23,9 @@
               {% csrf_token %}
                 <div class="form-row">
                     <div class="card">
-                      <div class="image-box">
-                      </div>
-                      <div class="title-box">
-                        <p class="title">Customer name:{{ form.name | as_crispy_field }}</p>
+                      <div class="box">
+                        <div class="image-box"></div>
+                        <div class="text">{{ form.name | as_crispy_field }}</div>
                       </div>
                       <div class="line"></div>
                       <div class="desc-box">
